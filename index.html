@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Móvil</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/stylelight.css">
+</head>
+
+<body class="flex items-center justify-center h-screen bg-gray-800 m-0">
+    <div class="bg-gray-600 rounded-lg shadow-lg p-8 w-full h-screen max-w-96 max-h-full max-w-screen-sm my-2.5">
+        <div class="bg-gray-700 text-white text-right p-0.5 pt-1 rounded-lg mb-4 h-1/4 texto-display">
+            <div class="text-4xl" data-valor-superior></div>
+            <div class="text-5xl" data-valor-inferior></div>
+        </div>
+        <div class="grid grid-cols-4 gap-4 h-3/4">
+            <button class="ac col-span-2 bg-gray-500 hover:bg-green-500 text-white text-2xl font-bold py-2 rounded-full shadow-md align-middle"
+                data-borrar-todo>AC</button>
+            <button class="del bg-gray-500 hover:bg-red-500 text-white text-2xl font-bold py-2 rounded-full shadow-md align-middle"
+                data-borrar>DEL</button>
+            <button class="op bg-blue-600 hover:bg-blue-500 text-white text-4xl font-bold py-2 rounded-full shadow-md align-middle"
+                data-operador>÷</button>
+            <button class="bg-gray-500 hover:bg-gray-400 text-white text-3xl font-bold py-2 rounded-full shadow-md align-middle"
+                data-numero>1</button>
+            <button class="bg-gray-500 hover:bg-gray-400 text-white text-3xl font-bold py-2 rounded-full shadow-md align-middle"
+                data-numero>2</button>
+            <button class="bg-gray-500 hover:bg-gray-400 text-white text-3xl font-bold py-2 rounded-full shadow-md align-middle"
+                data-numero>3</button>
+            <button class="op bg-blue-600 hover:bg-blue-500 text-white text-4xl font-bold py-2 rounded-full shadow-md align-middle"
+                data-operador>*</button>
+            <button class="bg-gray-500 hover:bg-gray-400 text-white text-3xl font-bold py-2 rounded-full shadow-md align-middle"
+                data-numero>4</button>
+            <button class="bg-gray-500 hover:bg-gray-400 text-white text-3xl font-bold py-2 rounded-full shadow-md align-middle"
+                data-numero>5</button>
+            <button class="bg-gray-500 hover:bg-gray-400 text-white text-3xl font-bold py-2 rounded-full shadow-md align-middle"
+                data-numero>6</button>
+            <button class="op bg-blue-600 hover:bg-blue-500 text-white text-4xl font-bold py-2 rounded-full shadow-md align-middle"
+                data-operador>+</button>
+            <button class="bg-gray-500 hover:bg-gray-400 text-white text-3xl font-bold py-2 rounded-full shadow-md align-middle"
+                data-numero>7</button>
+            <button class="bg-gray-500 hover:bg-gray-400 text-white text-3xl font-bold py-2 rounded-full shadow-md align-middle"
+                data-numero>8</button>
+            <button class="bg-gray-500 hover:bg-gray-400 text-white text-3xl font-bold py-2 rounded-full shadow-md align-middle"
+                data-numero>9</button>
+            <button class="op bg-blue-600 hover:bg-blue-500 text-white text-4xl font-bold py-2 rounded-full shadow-md align-middle"
+                data-operador>-</button>
+            <button class="bg-gray-500 hover:bg-gray-400 text-white text-3xl font-bold py-2 rounded-full shadow-md align-middle"
+                data-numero>.</button>
+            <button class="bg-gray-500 hover:bg-gray-400 text-white text-3xl font-bold py-2 rounded-full shadow-md align-middle"
+                data-numero>0</button>
+            <button class="op col-span-2 bg-blue-600 hover:bg-blue-500 text-white text-4xl font-bold py-2 rounded-full shadow-md align-middle"
+                data-igual>=</button><button id="toggle-mode"
+                class="col-span-4 bg-gray-500 hover:bg-gray-400 text-white font-bold rounded-lg w-full">Toggle
+                Modo</button>
+        </div>
+
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

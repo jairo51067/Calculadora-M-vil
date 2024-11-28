@@ -1,0 +1,15 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Agrega esto a tu estilo existente */
+.texto-display {
+    overflow: hidden; /* Oculta el desbordamiento */
+    text-overflow: ellipsis; /* Muestra "..." si el texto es demasiado largo */
+    white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+}
+

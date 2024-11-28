@@ -1,0 +1,49 @@
+/* Estilo para el modo claro */
+.light-mode {
+  --tw-bg-opacity: 1;
+  background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
+  color: #000;
+}
+
+.light-mode .bg-gray-600 {
+  background-color: #f3f4f6; /* Color de fondo claro */
+}
+
+.light-mode .bg-gray-700 {
+  background-color: #e5e7eb; /* Color de fondo del display claro */
+}
+
+.light-mode .bg-blue-600 {
+  background-color: #3b82f6; /* Color de botones claro */
+}
+
+.light-mode .bg-green-600 {
+  background-color: #22c55e; /* Color de AC claro */
+}
+
+.light-mode .bg-red-600 {
+  background-color: #ef4444; /* Color de DEL claro */
+}
+
+.light-mode .bg-gray-500 {
+  background-color: #d1d5db; /* Color de botones numéricos claro */
+}
+
+.light-mode .text-white{
+  color: #444;
+}
+
+.light-mode .ac:hover{
+  background-color: #22c55e;
+  color: white;
+}
+
+.light-mode .del:hover{
+  background-color: #ef4444;
+  color: white;
+}
+
+.light-mode .op:hover{
+  background-color: #000;
+  color: white;
+}
